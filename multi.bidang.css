@@ -1,0 +1,234 @@
+body {
+    background-color: #fcffbb;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-position: center;
+    z-index: 1000;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-overlay h1 {
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'fontjudul', 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px #ff914d;
+    margin-bottom: 0;
+    color: #ff914d;
+}
+
+.text-overlay h2 {
+    font-size: 50px;
+    font-family: 'fontjudul2', 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+    color: rgb(247, 245, 143);
+}
+
+.text-overlay p {
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.box1 {
+    border: 2px solid #ff914d;
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    margin: 180px auto;
+    margin-bottom: 10px;
+    font-family: 'fonttext', 'Times New Roman', Times, serif;
+}
+
+.box {
+    border: 2px solid #ff914d;
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    margin: 10px auto;
+    font-family: 'fonttext', 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ff914d;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'fonttext2', 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0 0 0px 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'fonttext', 'Times New Roman', Times, serif;
+    margin: 0 0 10px 0;
+    margin-top: 0;
+    text-align: justify;
+}
+
+.isi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    gap: 0; 
+    margin: 0; 
+    padding: 0;
+}
+
+.column-left, .column-side {
+    padding: 0; 
+    margin: 0;
+}
+
+.column-left {
+    width: max-content; 
+    height: auto; 
+}
+
+.column-middle {
+    width: max-content; 
+}
+
+.section {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+    max-width: 1200px;
+}
+
+.text-container {
+    flex: 1;
+    width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex-shrink: 0;
+    width: 30%;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+.polaroid1 {
+    margin-left: 15px; 
+    margin-bottom: 10px;
+    margin-top: 180px;
+    padding: 0;
+    max-width: 280px;
+    border: 10px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid1:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.polaroid {
+    margin-left: 15px; 
+    margin-bottom: 10px;
+    padding: 0;
+    max-width: 280px;
+    border: 10px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.home.button {
+    position: fixed; 
+    bottom: 0px; 
+    right: 0px; 
+    z-index: 1000; 
+    margin-left: 1230px;
+}
+
+.home.button img {
+    width: 80px; 
+    height: auto; /* Menjaga proporsi gambar agar tidak terdistorsi */
+    cursor: pointer; /* Menampilkan pointer saat hover di gambar */
+}
+
+
+.Daftar-Pustaka {
+    background-color: white;
+    padding: 20px; 
+    margin-top: 40px;
+    border: 2px solid #ff914d; 
+    position: relative;
+    bottom: 0;
+}
+
+.Daftar-Pustaka h3 {
+    font-size: 40px; 
+    text-align: center; 
+    color: #ff914d; /* Warna teks judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+    font-weight: bold; 
+}
+
+.Daftar-Pustaka ol {
+    font-size: 20px;
+    list-style: decimal; /* Menampilkan angka untuk daftar */
+    padding-left: 20px;
+    margin: 10px 0; /* Jarak atas dan bawah daftar */
+    color: #000000; /* Warna teks isi */
+}
+
+.Daftar-Pustaka li {
+    font-size: 18px; 
+    color: #005bb5; /* Warna teks daftar */
+    margin-bottom: 10px; /* Jarak antar item daftar */
+}
+
+.Daftar-Pustaka a {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: #005bb5; /* Warna teks link */
+}
+
+.Daftar-Pustaka a:hover {
+    text-decoration: underline; /* Garis bawah saat di-hover */
+    color: #ff914d; /* Warna link saat di-hover */
+}
+
